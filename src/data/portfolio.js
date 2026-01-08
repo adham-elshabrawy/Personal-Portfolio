@@ -58,6 +58,29 @@ export const extracurricularExperience = [
       "Implement algorithms in C++ and Python such as D* Lite, Kalman/Particle filters, and Model PredictiveController (MPC) improving system accuracy and performance.",
     ],
   },
+  {
+    id: 2,
+    title: "Electronics Member",
+    organization: "Queen's Aerospace Design Team",
+    location: "Kingston, Ontario, Canada",
+    period: "October 2024 - May 2025",
+    responsibilities: [
+      "Optimized AUAV flight dynamics through control loop tuning and engineered custom electrical systems, ranging from hardware selection to PCB design in Altium.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Autonomy Member",
+    organization: "Queen's SAE Autodrive",
+    location: "Kingston, Ontario, Canada",
+    period: "October 2024 - May 2025",
+    responsibilities: [
+      "1st place in Technical & Safety Reports",
+      "2nd place in Mobility Innovation (0-0-0 Challenge)",
+      "Utilize LiDAR, cameras, and V2X systems to fuse sensor data for real-time object detection and tracking, ensuring accurate perception for autonomous driving.",
+      "Apply probabilistic algorithms to track multiple objects and synchronize sensor inputs, improving detection reliability and decision-making.",
+    ],
+  },
 ];
 
 export const projects = [
@@ -66,7 +89,7 @@ export const projects = [
     title: "Vision-Based Dexterous Robotic Hand",
     description: "Designed and built a 5-DoF Computer vision–controlled robotic hand for remote manipulation in environments inaccessible or unsafe for humans.",
     technologies: ["SolidWorks", "Python", "OpenCV", "C++", "Raspberry Pi", "Git"],
-    image: "/project-1.jpg",
+    image: "/Robotic-Hand.PNG",
     link: "https://github.com/adham-elshabrawy/Hand-Tracker",
   },
   {
@@ -74,7 +97,7 @@ export const projects = [
     title: "Autonomous Delivery Robot",
     description: "Engineered a ROS2-based autonomous robot for hospital logistics, achieving 93% navigation accuracy via custom SLAM and D* Lite path planning.",
     technologies: ["Python", "C++", "ROS2", "Linux", "Git"],
-    image: "/project-2.jpg",
+    image: "/delivery-bot.jpg",
   },
   {
     id: 3,
