@@ -9,10 +9,10 @@ export default function Projects() {
     <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
@@ -23,35 +23,22 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
-            const Component = project.link ? motion.a : motion.div
-            const linkProps = project.link ? {
-              href: project.link,
-              target: "_blank",
-              rel: "noopener noreferrer"
-            } : {}
-            
-            return (
-              <Component
-                key={project.id}
-                {...linkProps}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="group card-gradient rounded-3xl overflow-hidden border border-slate-700 border-glow-hover hover:border-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
+            const content = (
+              <>
                 {/* Image */}
                 <div className="aspect-video bg-gradient-to-br from-blue-500 via-blue-600 to-cyan-500 relative overflow-hidden">
                   {project.image ? (
                     <img 
                       src={project.image} 
                       alt={project.title}
+                      loading="lazy"
+                      decoding="async"
                       className={`w-full h-full object-cover object-center ${
                         project.id === 1 
-                          ? 'object-[center_2%]' 
+                          ? 'object-center-2' 
                           : project.id === 2
-                          ? 'object-[center_62%]'
-                          : 'object-[center_15%]'
+                          ? 'object-center-62'
+                          : 'object-center-15'
                       }`}
                     />
                   ) : (
@@ -63,7 +50,7 @@ export default function Projects() {
                   )}
                   {project.link && (
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                      <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg border border-white/30">
+                      <div className="w-10 h-10 rounded-full bg-slate-800/90 flex items-center justify-center shadow-lg border border-white/30">
                         <ExternalLink className="w-5 h-5 text-white" />
                       </div>
                     </div>
@@ -89,7 +76,34 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-              </Component>
+              </>
+            )
+
+            return (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "0px" }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                style={{ willChange: 'opacity' }}
+                className="group card-gradient rounded-3xl overflow-hidden border border-slate-700 border-glow-hover hover:border-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div>
+                    {content}
+                  </div>
+                )}
+              </motion.div>
             )
           })}
         </div>

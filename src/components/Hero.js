@@ -101,7 +101,7 @@ export default function Hero() {
                 <img
                   src="/headshot.jpg"
                   alt="Profile"
-                  className="w-full h-full object-cover object-center object-[center_28%] rounded-3xl"
+                  className="w-full h-full object-cover object-center object-center-28 rounded-3xl"
                   onError={(e) => {
                     e.target.style.display = 'none'
                     e.target.nextSibling.style.display = 'flex'

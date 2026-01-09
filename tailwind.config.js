@@ -14,6 +14,12 @@ module.exports = {
       borderRadius: {
         'squircle': '1.5rem',
       },
+      objectPosition: {
+        'center-2': 'center 2%',
+        'center-15': 'center 15%',
+        'center-28': 'center 28%',
+        'center-62': 'center 62%',
+      },
     },
   },
   plugins: [],

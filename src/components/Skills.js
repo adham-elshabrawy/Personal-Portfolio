@@ -33,10 +33,10 @@ export default function Skills() {
           {Object.entries(skillsByCategory).map(([category, categorySkills], categoryIndex) => (
             <motion.div
               key={category}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.4, delay: categoryIndex * 0.05 }}
               className="space-y-6"
             >
               <h3 className="text-2xl sm:text-3xl font-bold text-white">
@@ -44,16 +44,12 @@ export default function Skills() {
               </h3>
               <div className="flex flex-wrap gap-3">
                 {categorySkills.map((skill, index) => (
-                  <motion.span
+                  <span
                     key={skill.name}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: categoryIndex * 0.1 + index * 0.05 }}
                     className="px-6 py-3 rounded-full bg-slate-800 border border-slate-600 text-gray-300 font-medium hover:border-blue-400 hover:text-blue-400 hover:bg-blue-500/10 transition-all duration-300 shadow-md hover:shadow-lg"
                   >
                     {skill.name}
-                  </motion.span>
+                  </span>
                 ))}
               </div>
             </motion.div>
