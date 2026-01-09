@@ -101,19 +101,18 @@ export const projects = [
   },
   {
     id: 3,
-    title: "S&P 500 Stock Predictor",
-    description: "Built a historical data-driven stock predictor leveraging classification algorithms to identify future market movements.",
-    technologies: ["Python", "scikit-learn", "pandas", "numpy", "Git"],
-    image: "/project-3.jpg",
-    link: "https://github.com/adham-elshabrawy/Stock-Predictor",
-  },
-  {
-    id: 4,
     title: "Volt Vision",
     description: "Developed an interactive dashboard that leverages machine learning to predict charging hotspots and simulate the impact of infrastructure upgrades.",
     technologies: ["Python", "scikit-learn", "pandas", "numpy", "Git"],
     image: "/EV-GUI.png",
     link: "https://github.com/AnthonyBotticchio/QEC-Programming",
+  },
+  {
+    id: 4,
+    title: "S&P 500 Stock Predictor",
+    description: "Built a historical data-driven stock predictor leveraging classification algorithms to identify future market movements.",
+    technologies: ["Python", "scikit-learn", "pandas", "numpy", "Git"],
+    link: "https://github.com/adham-elshabrawy/Stock-Predictor",
   },
   {
     id: 5,
@@ -128,6 +127,13 @@ export const projects = [
     description: "Developed an AI-powered web application that curates outfit ideas from a digital wardrobe using computer vision and cloud infrastructure.",
     technologies: ["Python", "PostgreSQL", "OpenCV", "AWS", "Git"],
     link: "https://github.com/adham-elshabrawy/Smart-Mirror",
+  },
+  {
+    id: 7,
+    title: "Personal Portfolio Website",
+    description: "A modern, responsive portfolio website with smooth animations and gradient effects. The website you are currently on!",
+    technologies: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "JavaScript", "Git"],
+    link: "https://github.com/adham-elshabrawy/Personal-Portfolio",
   },
 ];
 
@@ -148,6 +154,7 @@ export const skills = [
   // Software Tools & Frameworks
   { name: "React", category: "Software Tools" },
   { name: "Next.js", category: "Software Tools" },
+  { name: "Tailwind CSS", category: "Software Tools" },
   { name: "Node.js", category: "Software Tools" },
   { name: "FastAPI", category: "Software Tools" },
   { name: "Docker", category: "Software Tools" },
@@ -162,6 +169,7 @@ export const skills = [
   { name: "PostgreSQL", category: "Software Tools" },
   { name: "Room", category: "Software Tools" },
   // Libraries
+  { name: "Framer Motion", category: "Libraries" },
   { name: "pandas", category: "Libraries" },
   { name: "NumPy", category: "Libraries" },
   { name: "Matplotlib", category: "Libraries" },

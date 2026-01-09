@@ -48,7 +48,7 @@ export default function Projects() {
                       alt={project.title}
                       className={`w-full h-full object-cover object-center ${
                         project.id === 1 
-                          ? 'object-[center_5%]' 
+                          ? 'object-[center_2%]' 
                           : project.id === 2
                           ? 'object-[center_62%]'
                           : 'object-[center_15%]'

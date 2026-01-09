@@ -4,7 +4,7 @@ import path from 'path'
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'resume.pdf')
+    const filePath = path.join(process.cwd(), 'public', 'Adham Elshabrawy Resume.pdf')
     
     // Check if file exists
     if (!fs.existsSync(filePath)) {
@@ -16,7 +16,7 @@ export async function GET() {
     return new NextResponse(fileBuffer, {
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="resume.pdf"',
+        'Content-Disposition': 'attachment; filename="Adham Elshabrawy Resume.pdf"',
         'Content-Length': fileBuffer.length.toString(),
         'Cache-Control': 'public, max-age=31536000, immutable',
       },

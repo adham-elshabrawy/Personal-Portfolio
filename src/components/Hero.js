@@ -54,7 +54,7 @@ export default function Hero() {
               className="flex flex-wrap gap-4"
             >
               <a
-                href="/resume.pdf"
+                href="/Adham Elshabrawy Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-400 hover:to-cyan-400 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
@@ -101,7 +101,7 @@ export default function Hero() {
                 <img
                   src="/headshot.jpg"
                   alt="Profile"
-                  className="w-full h-full object-cover rounded-3xl"
+                  className="w-full h-full object-cover object-center object-[center_28%] rounded-3xl"
                   onError={(e) => {
                     e.target.style.display = 'none'
                     e.target.nextSibling.style.display = 'flex'
