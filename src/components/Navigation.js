@@ -51,7 +51,7 @@ export default function Navigation() {
             onClick={(e) => handleNavClick(e, '#home')}
             className="text-xl lg:text-2xl font-bold text-white hover:text-blue-400 transition-colors bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text hover:from-blue-300 hover:to-cyan-300"
           >
-            Portfolio
+            Adham Elshabrawy
           </a>
 
           {/* Desktop Navigation */}

@@ -46,11 +46,17 @@ export default function Projects() {
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="w-full h-full object-cover object-center object-[center_15%]"
+                      className={`w-full h-full object-cover object-center ${
+                        project.id === 1 
+                          ? 'object-[center_5%]' 
+                          : project.id === 2
+                          ? 'object-[center_62%]'
+                          : 'object-[center_15%]'
+                      }`}
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-4xl font-bold text-white/30">
+                      <span className="text-6xl sm:text-7xl font-extrabold bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
                         {project.title.charAt(0)}
                       </span>
                     </div>

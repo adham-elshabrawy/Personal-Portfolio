@@ -9,7 +9,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Portfolio | Your Name',
+  title: 'Portfolio | Adham Elshabrawy',
   description: 'Professional portfolio website showcasing my work and experience',
 }
 

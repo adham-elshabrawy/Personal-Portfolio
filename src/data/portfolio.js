@@ -112,7 +112,7 @@ export const projects = [
     title: "Volt Vision",
     description: "Developed an interactive dashboard that leverages machine learning to predict charging hotspots and simulate the impact of infrastructure upgrades.",
     technologies: ["Python", "scikit-learn", "pandas", "numpy", "Git"],
-    image: "/project-3.jpg",
+    image: "/EV-GUI.png",
     link: "https://github.com/AnthonyBotticchio/QEC-Programming",
   },
   {
@@ -120,7 +120,6 @@ export const projects = [
     title: "KioskFace",
     description: "A secure Android tablet kiosk system that uses automatic face recognition to enable hands-free employee clock-in/out with encrypted biometric data storage and offline support.",
     technologies: ["Python", "FastAPI", "PostgreSQL", "Kotlin", "TensorFlow Lite", "Android SDK", "Room", "Git"],
-    image: "/project-3.jpg",
     link: "https://github.com/adham-elshabrawy/ID-Verification",
   },
   {
@@ -128,7 +127,6 @@ export const projects = [
     title: "AI-Powered Clothing Assistant",
     description: "Developed an AI-powered web application that curates outfit ideas from a digital wardrobe using computer vision and cloud infrastructure.",
     technologies: ["Python", "PostgreSQL", "OpenCV", "AWS", "Git"],
-    image: "/project-3.jpg",
     link: "https://github.com/adham-elshabrawy/Smart-Mirror",
   },
 ];
