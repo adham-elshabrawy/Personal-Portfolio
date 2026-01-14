@@ -99,7 +99,7 @@ export default function Hero() {
               <div className="w-full h-full bg-slate-800 rounded-3xl flex items-center justify-center">
                 {/* Replace this with your headshot image */}
                 <img
-                  src="/headshot.jpg"
+                  src="/Headshot.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover object-center object-center-28 rounded-3xl"
                   onError={(e) => {

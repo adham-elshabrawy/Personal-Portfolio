@@ -109,24 +109,24 @@ export const projects = [
   },
   {
     id: 4,
+    title: "ShopVision",
+    description: "ShopVision is a multimodal e-commerce web app for searching products by text or image, finding similar items, and answering product questions from images. It uses CLIP embeddings in a ChromaDB vector database plus the OpenAI (ChatGPT) API for descriptions and visual Q&A.",
+    technologies: ["Python", "PyTorch", "Hugging Face Transformers", "CLIP", "ChromaDB", "OpenAI API", "Gradio", "Git"],
+    link: "https://github.com/adham-elshabrawy/ShopVision",
+  },
+  {
+    id: 5,
     title: "S&P 500 Stock Predictor",
     description: "Built a historical data-driven stock predictor leveraging classification algorithms to identify future market movements.",
     technologies: ["Python", "scikit-learn", "pandas", "numpy", "Git"],
     link: "https://github.com/adham-elshabrawy/Stock-Predictor",
   },
   {
-    id: 5,
+    id: 6,
     title: "KioskFace",
     description: "A secure Android tablet kiosk system that uses automatic face recognition to enable hands-free employee clock-in/out with encrypted biometric data storage and offline support.",
     technologies: ["Python", "FastAPI", "PostgreSQL", "Kotlin", "TensorFlow Lite", "Android SDK", "Room", "Git"],
     link: "https://github.com/adham-elshabrawy/ID-Verification",
-  },
-  {
-    id: 6,
-    title: "AI-Powered Clothing Assistant",
-    description: "Developed an AI-powered web application that curates outfit ideas from a digital wardrobe using computer vision and cloud infrastructure.",
-    technologies: ["Python", "PostgreSQL", "OpenCV", "AWS", "Git"],
-    link: "https://github.com/adham-elshabrawy/Smart-Mirror",
   },
   {
     id: 7,
