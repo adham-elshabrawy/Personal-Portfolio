@@ -7,6 +7,7 @@ A minimalist portfolio website built with Next.js, Tailwind CSS, and Framer Moti
 - **Fully Responsive**: Mobile-friendly design that works on all devices
 - **Smooth Animations**: Framer Motion powered entrance animations
 - **Modern Stack**: Next.js 14 (App Router), Tailwind CSS, Lucide React icons
+- **Deployment**: Deployed using AWS for public hosting
 - **Performance Optimized**: Built with Next.js for optimal performance
 
 
